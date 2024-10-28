@@ -1,8 +1,14 @@
 def main():
-  myFile = open("qbdata.txt", 'r')
+  myFile = open("ufo_sightings.csv", 'r')
 
   for line in myFile:
-    print (line)
+   info = line.split(",")
+   #print(info[1])
+   if info[1] == '"NE"':
+     print(line)
+
+
+   print(line)
 
   myFile.close()
 
